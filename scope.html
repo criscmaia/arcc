@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link href="/index.css" rel="stylesheet">
+
+    <title>Project-arCc - Scope</title>
+</head>
+
+<body class="limit1130 bg-light">
+    <nav class="navbar navbar-expand-lg sticky-top" id="menu"></nav>
+    <div class="container-fluid" id="banner"></div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-9">
+                <h1>Scope</h1>
+                <p>Project – arCc stands for assuming responsibility for Climate change (Project – arCc).</p>
+                <p>The initial inception for this proposal was triggered during the COVID-19 pandemic, as Middlesex University was involved in two projects funded by the British Council as part of the Creative Spark programme. The projects were with Khazar University from Azerbaijan and Kyrgyzstan National University, and gave the opportunity to compare the diverse approach different nations had towards e-learning, remote work, virtual teams and other approaches to ensure the projects could continue during lock down. It became evident that as synergies were developed between the two projects, there was increased awareness and continues exchanges of experiences and perceptions of how to tackle the pandemic impact on education, training and collaboration. Therefore at the time of crisis we realised that an opportunity emerged to use the community that was being developed in order to contribute towards the global challenge of climate change. Project – arCc aims to bring together the resources of a truly international and interdisciplinary consortium where Middlesex University will act as a hub of creative and innovative initiatives. In collaboration with Oracle TES, a UK-based organisation with expertise in educational services, Middlesex University will coordinate institutions from twelve different countries in order to increase awareness of climate change at international level. Emphasis will be given on helping each partner to trigger empathy at national level by educating a critical mass of students and citizens about their share of accountability and responsibility towards climate change. The participating institutions represent a wide range of disciplines and have access to an impressive proportion of the population.</p>
+                <p>This project is intended to be the first step towards establishing a network of partners who are capable to scale up the project outputs with subsequent actions. The project aims at producing sustainable outputs that can help to further develop climate change awareness and trigger young people to reflect on how their actions impact climate change. Project – arc has the ambition to create a showcase that will report how the project’s work helped citizens from 13 countries to: </p>
+                <ul style="list-style-type: lower-roman;">
+                    <li> reflect on the impact of their lifestyle on climate change,</li>
+                    <li> realise the importance of individual accountability and</li>
+                    <li> identify ways to demonstrate awareness of their responsibility to take action.</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 dark-gray" id="keyDetails"></div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <footer class="footer" id="footer"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+<script>
+    $(function() {
+        $("#menu").load("menu.html", function() {
+            var pg = '/Project-arCc' + window.location.href.substring(window.location.href.lastIndexOf("/"));
+            $('a[href="' + pg + '"]').parent('li').addClass('active');
+        });
+        $("#banner").load("banner.html");
+        $("#keyDetails").load("keyDetails.html");
+        $("#footer").load("footer.html");
+    });
+
+</script>
+
+</html>

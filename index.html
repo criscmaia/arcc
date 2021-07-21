@@ -1,0 +1,53 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link href="/index.css" rel="stylesheet">
+    <title>Project-arCc</title>
+</head>
+
+<body class="limit1130 bg-light">
+    <nav class="navbar navbar-expand-lg sticky-top" id="menu"></nav>
+    <div class="container-fluid" id="banner"></div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-9">
+                <p>Project–arCc stands for assuming responsibility for Climate change. The project aims to fully align its outputs to a collective response towards climate change, using the combined efforts of 14 partners representing 13 countries. Funded and supported by the British Council under the open call for Creative Commissions, the project’s initial inception was triggered during the COVID-19 pandemic, as Middlesex University and Khazar University collaborated as part of the Creative Spark programme of the British Council. At a time of crisis, the measures taken to support learning, work, collaboration and communication, seemed to have a positive impact on the environment and contributed towards reversing climate change. The project idea was created, to bring together diffirent cultures and disciplines in a range of a collaborative initiatives focusing on increasing awareness and supporting individuals to assume responsibility for their impact on climate change. The focus of the project is for participating institutions to share resources so they engage young people in assuming responsibility towards saving the planet. As local partners will disseminate resources to the wider public, students will become ambassadors of Project–arCc in an effort to reach members of local communities.</p>
+                <img src="imgs/map.png" class="center">
+                <p>Project-arCc partners include 13 prestigious Universities and Oracle TES, an experienced e-learning and education solutions provider. The consortium identified an opportunity was triggered by the COVID-19 pandemic. Societies that previously dismissed remote working and working from home had to adapt to new restrictions imposed from national lockdowns. Educational systems that did not value e-learning or argued that it should not be recognised as an official mode of learning delivery had to adopt such practices as schools closed. Travel was restricted across the world, which led businesses to introduce new communication and collaboration approaches using computer supported cooperative work. Governments and organisations had to rethink the use of available resources and introduce more efficient ways to manage them. Finally, individuals realised that there is no endless supply of materials, goods and services in a society that is at the verge of collapsing due to the panic triggered by the early signs of a pandemic. These issues gave birth to the five themes of Project – arCc, which form the core of the project’s initiatives.</p>
+                <p>We hope you can join our international team in making a change to save our planet. Our starting point is increasing awareness and assuming responsibility in Albania, Azerbaijan, Bosnia and Herzegovina, Egypt, Georgia, Jordan, Kazakhstan, Kosovo, Nigeria, Palestine, South Africa, Tunisia and the UK. We hope more partners will join our efforts to communicate our message to the network of existing countries but also reach more countries worldwide.</p>
+            </div>
+            <div class="col-lg-3 dark-gray" id="keyDetails"></div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <footer class="footer" id="footer"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+<script>
+    $(function() {
+        $("#menu").load("menu.html", function() {
+            var pg = '/Project-arCc' + window.location.href.substring(window.location.href.lastIndexOf("/"));
+            $('a[href="' + pg + '"]').parent('li').addClass('active');
+        });
+        $("#banner").load("banner.html");
+        $("#keyDetails").load("keyDetails.html");
+        $("#footer").load("footer.html");
+    });
+
+</script>
+
+</html>

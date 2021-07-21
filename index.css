@@ -1,0 +1,66 @@
+        /* Sticky footer styles
+-------------------------------------------------- */
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
+        body {
+            margin-bottom: 95px;
+            /* Margin bottom by footer height */
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .navbar {
+            background-color: #2e8040;
+        }
+
+        .navbar a {
+            color: white !important;
+        }
+
+        .active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .limit1130 {
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 1130px;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+        }
+
+        .dark-gray {
+            background-color: #e9ecef;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            height: 75px;
+            width: 100%;
+            max-width: 1130px;
+            margin: 0;
+        }
+
+        #banner .row {
+            /*            background-color: #2e8040;*/
+            border-bottom: 1px green dashed;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+
+        #banner .col-lg-10 {
+            text-shadow: 0 0 1rem rgb(0 0 0 / 75%);
+            color: white;
+        }
